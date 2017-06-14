@@ -1,0 +1,19 @@
+<div class="container">
+<nav class="navbar navbar-default navbar-static-top container-fluid navbar-light" style="background-color: #e3f2fd;">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" [routerLink]="['/']"><span class="glyphicon glyphicon-home"></span></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li routerLinkActive="active"><a [routerLink]="['/especies']" >Species</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['/planetas']" >Planets</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['/personajes']" >Characters</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['/naves']">Starships</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['/vehiculos']" >Vehicles</a></li>
+          </ul>
+
+        </div> 
+      </div>
+    </nav>
+</div>

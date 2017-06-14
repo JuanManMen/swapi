@@ -1,0 +1,24 @@
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-md-9">
+        <h1><span class="label label-info">Species</span></h1>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <input type="text" [(ngModel)]="nombre" placeholder="Search..." class="form-control"/>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div *ngFor="let especie of listaEspecies | filtroEspecies:nombre" class="col-xs-6 col-md-3 tuneo">
+        <div class="panel panel-info">
+         <div class="panel-body">
+           <h3 class="panel-title">{{especie.name}}</h3>
+         </div>
+          <a [routerLink]="['/especies/detalle/', especie.url]">
+            <div class="panel-footer">Show more</div>
+          </a>
+        </div>
+      </div>
+    </div> 
+    <button *ngIf="mostrarBoton" (click)="avance(siguiente)" class="btn-lg btn-info btn-center">More Species</button>
+</div>

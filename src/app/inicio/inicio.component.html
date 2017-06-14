@@ -1,0 +1,19 @@
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let peli of listaPelis; let i=index" class="col-xs-6 col-md-6">
+        <div class="panel panel-info">
+         <div class="panel-body">
+           <h3 class="panel-title">Star Wars Episode {{peli.episode_id}}: {{peli.title}}</h3>
+         </div>
+            <div class="panel-footer">
+              <p>{{peli.opening_crawl}}</p>
+              <p>
+                Directed and produced by: {{peli.director}}, {{peli.producer}}
+                <br>
+                Copyrigth: {{peli.release_date}}
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>

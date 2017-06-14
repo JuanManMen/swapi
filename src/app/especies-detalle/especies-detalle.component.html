@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="panel panel-info">
+         <div class="panel-body">
+           <h1 class="panel-content">{{nombre}}</h1>
+         </div>
+        <div class="panel-footer">
+          <table class="table table-bordered">
+            <tr>
+              <td>Classification:</td><td>{{clasificacion}}</td>
+            </tr>
+            <tr>
+              <td>Designation:</td><td>{{designacion}}</td>
+            </tr>
+            <tr>
+              <td>Average height:</td><td>{{alturaMedia}}</td>
+            </tr>
+            <tr>
+              <td>Skin colors:</td><td>{{colorPiel}}</td>
+            </tr>
+            <tr>
+              <td>Hair colors:</td><td>{{colorPelo}}</td>
+            </tr>
+            <tr>
+              <td>Eye colors:</td><td>{{colorOjos}}</td>
+            </tr>
+            <tr>
+              <td>Average lifespan:</td><td>{{esperanzaVida}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <table>
+        <tr>
+          <td>
+      <a [routerLink]="['/']"><h3>
+        <span class="label label-info label-lg">Back to home</span>
+      </h3></a>
+          </td>
+          <td>   
+       <a [routerLink]="['/especies/']"><h3>
+        <span class="label label-info label-lg">Back to species</span>
+      </h3></a>
+          </td>
+        </tr>   
+      </table>
+</div>

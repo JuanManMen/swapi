@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="panel panel-info">
+         <div class="panel-body">
+           <h1 class="panel-content">{{nombre}}</h1>
+         </div>
+        <div class="panel-footer">
+          <table class="table table-bordered">
+            <tr>
+              <td>Model:</td><td>{{modelo}}</td>
+            </tr>
+            <tr>
+              <td>Manufacturer:</td><td>{{manufacturador}}</td>
+            </tr>
+            <tr>
+              <td>Cost in credits:</td><td>{{costeCreditos}}</td>
+            </tr>
+            <tr>
+              <td>Length:</td><td>{{largo}}</td>
+            </tr>
+            <tr>
+              <td>Max atmosphering speed:</td><td>{{velocidadAtmosfericaMaxima}}</td>
+            </tr>
+            <tr>
+              <td>Basic crew:</td><td>{{tripulacionMinima}}</td>
+            </tr>
+            <tr>
+              <td>Maximum passengers:</td><td>{{pasajerosMaximos}}</td>
+            </tr>
+            <tr>
+              <td>Transportable weight:</td><td>{{capacidadCarga}}</td>
+            </tr>
+            <tr>
+              <td>Hyperdrive:</td><td>{{hiperimpulsor}}</td>
+            </tr>
+            <tr>
+              <td>Class:</td><td>{{clase}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <table>
+        <tr>
+          <td>
+      <a [routerLink]="['/']"><h3>
+        <span class="label label-info label-lg">Back to home</span>
+      </h3></a>
+          </td>
+          <td>   
+       <a [routerLink]="['/naves/']"><h3>
+        <span class="label label-info label-lg">Back to starships</span>
+      </h3></a>
+          </td>
+        </tr>   
+      </table>
+</div>

@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="panel panel-info">
+         <div class="panel-body">
+           <h1 class="panel-content">{{nombre}}</h1>
+         </div>
+        <div class="panel-footer">
+          <table class="table table-bordered">
+            <tr>
+              <td>Height:</td><td>{{altura}}</td>
+            </tr>
+            <tr>
+              <td>Mass:</td><td>{{peso}}</td>
+            </tr>
+            <tr>
+              <td>Gender:</td><td>{{genero}}</td>
+            </tr>
+            <tr>
+              <td>Skin color:</td><td>{{colorPiel}}</td>
+            </tr>
+            <tr>
+              <td>Hair color:</td><td>{{colorPelo}}</td>
+            </tr>
+            <tr>
+              <td>Eyes color:</td><td>{{colorOjos}}</td>
+            </tr>
+            <tr>
+              <td>Birthday year:</td><td>{{nacimiento}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <table>
+        <tr>
+          <td>
+      <a [routerLink]="['/']"><h3>
+        <span class="label label-info label-lg">Back to home</span>
+      </h3></a>
+          </td>
+          <td>   
+       <a [routerLink]="['/personajes/']"><h3>
+        <span class="label label-info label-lg">Back to characters</span>
+      </h3></a>
+          </td>
+        </tr>   
+      </table>
+</div>
